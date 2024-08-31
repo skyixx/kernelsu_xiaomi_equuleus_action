@@ -40,10 +40,10 @@ jobs:
            git config --global user.email "asfasdas@gmail.com"
            git config --global user.name "asdasfgas"
            git config advice.mergeConflict false
-           git add .
-           git rebase --continue
            git remote add target https://github.com/CZB666-wdnmd/KernelSU.git
            git fetch target
+           git add .
+           git rebase --continue
            git cherry-pick -n 7e495e606a70653e3e9e4c3d082d99fb6b6958c4 e407b54d8865a7d190e3b65bdf59902277eebedf
 
        - name: Build
